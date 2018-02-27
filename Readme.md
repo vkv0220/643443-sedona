@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Konstantin Vishnivetskiy](https://up.htmlacademy.ru/htmlcss/20/user/643443).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Гурьев] (https://htmlacademy.ru/profile/danakishi).
 
 ---
 
