@@ -24,10 +24,10 @@
 
   <section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
-      <form class="detail-seek" method="post" action="https://echo.htmlacademy.ru">
-       <div class="filter-infrastructure">
+    <form class="detail-seek" method="post" action="https://echo.htmlacademy.ru">
+      <div class="filter-infrastructure">
         <fieldset>
-        <legend class="infractructure">Инфраструктура</legend>
+          <legend class="infractructure">Инфраструктура</legend>
           <input type="checkbox" name="pool" id="filter-pool" checked>
           <label for="filter-pool">Бассейн</label>
           <input type="checkbox" name="park" id="filter-park">
@@ -35,29 +35,29 @@
           <input type="checkbox" name="wlan" id="filter-wlan">
           <label for="filter-wlan">Wi-Fi</label>
         </fieldset>
-    </div>
-    <div class="filter-hotel-type">
-      <fieldset>
-        <legend class="infractructure">Тип жилья</legend>
+      </div>
+      <div class="filter-hotel-type">
+        <fieldset>
+          <legend class="infractructure">Тип жилья</legend>
           <input type="checkbox" name="hotel" id="filter-holtel" checked>
           <label for="filter-holtel">Гостиница</label>
           <input type="checkbox" name="motel" id="filter-motel" checked>
           <label for="filter-motel">Мотель</label>
           <input type="checkbox" name="appartments" id="filter-appartments" checked>
           <label for="filter-appartments">Аппартаменты</label>
-      </fieldset>
-    </div>
-    <div class="filter-price">
-     <fieldset>
-        <legend class="pricing">Стоимость в сутки (р):</legend>
+        </fieldset>
+      </div>
+      <div class="filter-price">
+        <fieldset>
+          <legend class="pricing">Стоимость в сутки (р):</legend>
           <label for="price-from">От</label>
           <input type="number" name="price-from" id="price-from" value="0" min="0">
           <label for="price-to">До</label>
           <input type="number" name="price-to" id="price-to" value="3000" min="0">
           <input type="range" id="price-round-up" min="0">
           <input type="range" id="price-round-to" min="0">
-      </fieldset>
-    </div>
+        </fieldset>
+      </div>
       <input type="submit" value="Показать">
     </form>
   </section>
