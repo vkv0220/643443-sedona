@@ -24,17 +24,45 @@
 
   <section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
-    <div class="filter-infrastructure">
-      <!-- Здесь будет форма -->
-    </div>
-    <div class="filter-hotel-type">
-      <!-- Здесь будет форма -->
-    </div>
-    <div class="filter-price">
-      <!-- Здесь будет форма -->
-    </div>
-  </section>
+    <form class="detail-seek" method="post" action="https://echo.htmlacademy.ru">
+      <div class="filter-infrastructure">
+        <fieldset>
+          <legend class="infractructure">Инфраструктура</legend>
+          <input type="checkbox" name="pool" id="filter-pool" checked>
+          <label for="filter-pool">Бассейн</label>
+          <input type="checkbox" name="park" id="filter-park">
+          <label for="filter-park">Парковка</label>
+          <input type="checkbox" name="wlan" id="filter-wlan">
+          <label for="filter-wlan">Wi-Fi</label>
+        </fieldset>
+      </div>
+      <div class="filter-hotel-type">
+        <fieldset>
+          <legend class="infractructure">Тип жилья</legend>
+          <input type="checkbox" name="hotel" id="filter-holtel" checked>
+          <label for="filter-holtel">Гостиница</label>
+          <input type="checkbox" name="motel" id="filter-motel" checked>
+          <label for="filter-motel">Мотель</label>
+          <input type="checkbox" name="appartments" id="filter-appartments" checked>
+          <label for="filter-appartments">Аппартаменты</label>
+        </fieldset>
+      </div>
+      <div class="filter-price">
+        <fieldset>
+          <legend class="pricing">Стоимость в сутки (р):</legend>
+          <!-- Вариант 1 поля ввода и бегунки живут сами по себе -->
+          <label for="price-from">От</label>
+          <input type="number" name="price-from" id="price-from" value="0" min="0">
+          <label for="price-to">До</label>
+          <input type="number" name="price-to" id="price-to" value="3000" min="0">
+          <input type="range" id="price-round-up" min="0">
+          <input type="range" id="price-round-to" min="0">
 
+        </fieldset>
+      </div>
+      <input type="submit" value="Показать">
+    </form>
+  </section>
   <main class="content">
 
     <div class="sort-result">
@@ -54,7 +82,7 @@
     <section class="search-results">
 
       <h2 class="visually-hidden">Найденные гостиницы</h2>
-      
+
       <ul class="result-list">
 
         <li class="result-item">
@@ -84,13 +112,13 @@
             <img src="img/hotels-desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
           </p>
 
-            <h3>Desert quail inn</h3>
-              <p class="searsh-item-type">
-                мотель
-              </p>
-              <p class="searsh-item-pricefrom">
-                ОТ 3000 Р.
-              </p>
+          <h3>Desert quail inn</h3>
+          <p class="searsh-item-type">
+            мотель
+          </p>
+          <p class="searsh-item-pricefrom">
+            ОТ 3000 Р.
+          </p>
           <ul>
             <li class="about-hotel"><a class="button" href="#">Подробнее</a></li>
             <li class="book-hotel"><a class="button" href="#">Забронировать</a></li>
@@ -132,6 +160,7 @@
 
       </ul>
       
+
     </section>
   </main>
 
