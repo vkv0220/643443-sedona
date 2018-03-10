@@ -111,24 +111,44 @@
 
     <div class="social">
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
+        <li><a class="social-button" href="https://twitter.com/" target="_blank" Aria-label="Twitter">Twitter</a></li>
+        <li><a class="social-button" href="https://facebook.com" target="_blank" Aria-label="Facebook">Facebook</a></li>
+        <li><a class="social-button" href="https://youtube.com" target="_blank" Aria-label="Youtube">Youtube</a></li>
       </ul>
     </div>
 
     <p class="footer-copyright">
       <ul>
         <li>WEBSITE by</li>
-        <li><a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
+        <li><a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">HTML Academy</a></li>
       </ul>
 
   </footer>
 
   <div class="search modal-form">
     <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-    <!-- Здесь будет форма -->
     <a href="#" class="do-search">Поиск гостиницы в Седоне</a>
+    <form class="modal-seek" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="checkin-date">Дата заезда</label>
+        <input id="checkin-date" type="text" name="checkin-date" placeholder="24 апреля 2017">
+      </p>
+      <p>
+        <label for="checkout-date">Дата выезда</label>
+        <input id="checkout-date" type="text" name="checkout-date" placeholder="4 июля 2017">
+      </p>
+      <p>
+        <label>
+          <input type="number" name="adults" value="2" min="1"> Взрослые
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="number" name="children" value="0" min="0"> Дети
+        </label>
+      </p>
+      <button type="submit">Найти</button>
+    </form>
   </div>
 
 </body>
