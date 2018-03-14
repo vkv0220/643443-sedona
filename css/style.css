@@ -27,6 +27,7 @@ a {
   overflow: hidden;
 }
 
+.intro {
   display: flex;
   height: 773px;
   width: 1200px;
