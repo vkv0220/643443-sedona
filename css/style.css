@@ -43,22 +43,35 @@ a {
 }
 
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
   background-color: #669ec0;
 }
+
+
+
 .site-navigation {
   font-weight: 700;
   list-style: none;
   color: #000000;
 }
 
-.quick-search {
+.quick-search,
+.summ-result {
   font-size:21px;
 }
+.quick-search:hover {
+  background-color: #669ec0;
+}
 
- a.do-search,
- a.do-search:visited {
+.quick-search:active,
+.button:active  {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+a.do-search,
+a.do-search:visited
+  {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -66,15 +79,23 @@ a {
   background-color: #766357;
 }
 
- a.do-search:hover {
+a.book,
+a.book:visited
+{
+  color: #ffffff;
+  background-color: #766357;
+}
+
+a.do-search:hover,
+a.book:hover{
   background-color: #604e43;
 }
 
- a.do-search:active {
-  color: 928a85;
+a.do-search:active,
+a.book:active {
+  color: #928a85;
   background-color: #503e33;
 }
-
 
 .why-we {
   font-size: 14px;
@@ -82,19 +103,24 @@ a {
   font-weight: normal;
 }
 
-.content-description  {
+.content-description,
+.followus,
+.result-item h3 {
   font-size: 21px;
 }
 
 h3.feauteres-head,
-h4.advanced-head  {
+h4.advanced-head {
   font-size: 21px;
   line-height: 21px;
 }
 
 .feauteres-number,
 .feauteres-decription,
-p.advanced-decription {
+p.advanced-decription,
+.searsh-item-type,
+.searsh-item-pricefrom,
+.raiting-hotel {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -115,6 +141,65 @@ p.advanced-decription {
   font-weight: normal;
 }
 
-.quick-search {
-  
+.twitter {
+  background: url("/img/twitter.svg") no-repeat;
+}
+
+.facebook {
+  background: url("/img/fb-icon.svg") no-repeat;
+}
+
+.youtube {
+  background: url("/img/youtube.svg") no-repeat;
+}
+.social li {
+    list-style: none;
+    background-color: #81b3d2;
+}
+
+.infractructure,
+.pricing {
+  font-size: 16px;
+  line-height: 21px;
+}
+.filters ul,
+.sort-by,
+.sort-up-down,
+.result-list {
+  list-style: none;
+}
+
+.filters label {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filters {
+  color: #ffffff;
+  background-color: #81b3d2;
+  background-image: url("/img/bg-hotels.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.filters fieldset {
+  border: none;
+}
+
+
+.filters-submit {
+  color: #ffffff;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #ffffff;
+}
+
+.filters-submit:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.sort-name {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
 }
