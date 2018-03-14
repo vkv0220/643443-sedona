@@ -32,7 +32,7 @@ a {
   height: 773px;
   width: 1200px;
   background-color: #a77269;
-  background-image: url("img/background-descr.jpg");
+  background-image: url("/img/background-descr.jpg");
   background-repeat: no-repeat;
 }
 
@@ -41,7 +41,7 @@ a {
   position: relative;
   top: -57px;
   height: 57px;
-  background-image: url("img/background-mask.png");
+  background-image: url("/img/background-mask.png");
   background-repeat: no-repeat;
 }
 
@@ -207,7 +207,7 @@ p.advanced-decription,
 .filters {
   color: #ffffff;
   background-color: #81b3d2;
-  background-image: url("img/bg-hotels.jpg");
+  background-image: url("/img/bg-hotels.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -273,17 +273,17 @@ p.advanced-decription,
 
 .twitter {
   background-position: 50% 50%;
-  background: url("img/twitter.svg") no-repeat;
+  background: url("/img/twitter.svg") no-repeat;
 }
 
 .facebook {
   background-position: 50% 50%;
-  background: url("img/fb-icon.svg") no-repeat;
+  background: url("/img/fb-icon.svg") no-repeat;
 }
 
 .youtube {
   background-position: 50% 50%;
-  background: url("img/youtube.svg") no-repeat;
+  background: url("/img/youtube.svg") no-repeat;
 }
 
 .main-pictures-first {
@@ -292,7 +292,7 @@ p.advanced-decription,
   margin: 0px;
   width: 800px;
   height: 256px;
-  background-image: url("img/feauteres-first.jpg");
+  background-image: url("/img/feauteres-first.jpg");
   background-position: 50% 50%;
 }
 
@@ -302,6 +302,6 @@ p.advanced-decription,
   margin: 0px;
   width: 800px;
   height: 256px;
-  background-image: url("img/feauteres-second.jpg");
+  background-image: url("/img/feauteres-second.jpg");
   background-position: 50% 50%;
 }
