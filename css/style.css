@@ -9,11 +9,41 @@ body {
   background-size: auto 1200px;
   background-position: top center;
   background-repeat: no-repeat;
+  width: 1200px;
 }
 
 a {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+  display: flex;
+  height: 773px;
+  width: 1200px;
+  background-color: #a77269;
+  background-image: url("/img/background-descr.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro-mask {
+  display: flex;
+  position: relative;
+  top: -57px;
+  height: 57px;
+  background-image: url("/img/background-mask.png");
+  background-repeat: no-repeat;
+}
+
 
 .site-navigation a {
   color: #000000;
@@ -140,37 +170,18 @@ p.advanced-decription,
   font-weight: normal;
 }
 
-.main-feauteres {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
 .search-interest {
   font-size: 30px;
   line-height: 24px;
+  text-align: center;
 }
 
 .search-description {
   line-height: 24px;
   font-weight: normal;
+  text-align: center;
 }
 
-.twitter {
-  background: url("/img/twitter.svg") no-repeat;
-}
-
-.facebook {
-  background: url("/img/fb-icon.svg") no-repeat;
-}
-
-.youtube {
-  background: url("/img/youtube.svg") no-repeat;
-}
-
-.social li {
-  list-style: none;
-  background-color: #81b3d2;
-}
 
 .infractructure,
 .pricing {
@@ -221,4 +232,75 @@ p.advanced-decription,
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+}
+
+.main-feauteres {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 396px;
+  height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feauteres-advanced {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px;
+  width: 396px;
+  height: 256px;
+}
+
+.second-feauteres {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px;
+  width: 396px;
+  height: 256px;
+}
+
+.social li {
+  list-style: none;
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.twitter {
+  background-position: 50% 50%;
+  background: url("/img/twitter.svg") no-repeat;
+}
+
+.facebook {
+  background-position: 50% 50%;
+  background: url("/img/fb-icon.svg") no-repeat;
+}
+
+.youtube {
+  background-position: 50% 50%;
+  background: url("/img/youtube.svg") no-repeat;
+}
+
+.main-pictures-first {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+  width: 800px;
+  height: 256px;
+  background-image: url("/img/feauteres-first.jpg");
+  background-position: 50% 50%;
+}
+
+.main-pictures-last {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+  width: 800px;
+  height: 256px;
+  background-image: url("/img/feauteres-second.jpg");
+  background-position: 50% 50%;
 }
