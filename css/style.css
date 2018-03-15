@@ -265,26 +265,64 @@ p.advanced-decription,
 
 .social li {
   list-style: none;
+  display: inline;
+}
+
+.social a {
+  position: relative;
   display: inline-block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  vertical-align: top;
+  font-size: 0;
 }
 
-.twitter {
+a.twitter::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-position: 50% 50%;
-  background: url("../img/twitter.svg") no-repeat;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
-.facebook {
+a.facebook::after  {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-position: 50% 50%;
-  background: url("../img/fb-icon.svg") no-repeat;
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
-.youtube {
+a.youtube::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-position: 50% 50%;
-  background: url("../img/youtube.svg") no-repeat;
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
+
+.social a:hover {
+  background: #669ec0;
+}
+
+.social a:active {
+  background: #5496bd;
+}
+
+.social a:active::after {
+  opacity: .3;
+}
+
 
 .main-pictures-first {
   display: inline-block;
