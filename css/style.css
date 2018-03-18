@@ -46,6 +46,7 @@ list-style: none;
   width: 100%;
   font-weight: 700;
   justify-content: space-around;
+  outline: 1px solid blue;
 }
 
 .main-navigation {
@@ -62,6 +63,7 @@ list-style: none;
   position: relative;
   top: -40px;
 justify-content: center;
+   outline: 1px solid yellow;
   
 }
 
@@ -107,6 +109,7 @@ margin-right: 60px;
 
 
 .intro {
+   outline: 1px solid aqua;
   display: flex;
   position: relative;
   flex-direction: column-reverse;
@@ -133,7 +136,7 @@ margin-right: 60px;
 
 
 .content-description {
- 
+ outline: 1px solid green;
   display: flex;
   width: 500px;
   margin-top: 3px;
@@ -356,6 +359,7 @@ p.advanced-decription,
 }
 
 .content-main {
+  outline: 1px solid aqua;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -472,6 +476,7 @@ a.youtube::after {
 
 
 .search {
+  outline: 1px solid orange;
   display: flex;
   min-height: 290px;
   width: auto;
@@ -482,6 +487,7 @@ a.youtube::after {
 }
 
 .map {
+  outline: 1px solid green;
   display: flex;
     position: relative;
   height: 473px;
@@ -507,7 +513,7 @@ a.youtube::after {
   display: flex;
   position: relative;
   min-height: 120px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(255,255,255,0.9);
   z-index: 3;
