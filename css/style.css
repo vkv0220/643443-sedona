@@ -239,7 +239,10 @@ a.book:active {
 .content-description,
 .followus,
 .result-item h3 {
-  font-size: 21px;
+  font-size: 23px;
+}
+.followus {
+margin-left: 10px;
 }
 
 h3.feauteres-head {
@@ -433,6 +436,7 @@ p.advanced-decription,
 .social li {
   list-style: none;
   display: inline;
+  margin-left: 3px;
 }
 
 .social a {
@@ -535,6 +539,7 @@ a.youtube::after {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 3;
+  margin-left: auto;
 
 }
 
@@ -558,4 +563,61 @@ a.youtube::after {
   outline: 1px solid grey;
   display: flex;
   justify-content: space-around;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+
+.copyright-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-academy {
+  margin-left: 10px;
+  display: block;
+  width: 115px;
+  height: 41px;
+  background-position: 50% 50%;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+a.logo-academy:hover {
+  background-image:  url("../img/logo-htmlacademy-hover.svg");
+}
+a.logo-academy:active {
+  background-image:  url("../img/logo-htmlacademy-active.svg");
+}
+
+.social {
+  margin-left: 30px;
+  margin-right: 1px;
+}
+
+.modal-seek {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-dates input,
+.peoples-count input {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 9px 12px;
+  height: 38px;
+  margin: 0px;
+  outline: none;
+}
+
+.quick-search {
+width: 458px;
+  min-height: 58px;
+  
 }
