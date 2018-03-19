@@ -46,7 +46,9 @@ a {
   width: 100%;
   font-weight: 700;
   justify-content: space-around;
+  
   outline: 1px solid blue;
+  background-color: rgba(225,225,255,0.4);
 }
 
 .main-navigation {
@@ -64,6 +66,7 @@ a {
   top: -40px;
   justify-content: center;
   outline: 1px solid yellow;
+  background-color: rgba(225,225,255,0.4);
 
 }
 
@@ -110,6 +113,8 @@ a {
 
 .intro {
   outline: 1px solid aqua;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   position: relative;
   flex-direction: column-reverse;
@@ -137,14 +142,16 @@ a {
 
 .content-description {
   outline: 1px solid green;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
+  font-size: 21px;
   width: 500px;
   margin-top: 3px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 53px;
 
 }
 
@@ -236,7 +243,7 @@ a.book:active {
   padding-top: 27px;
 }
 
-.content-description,
+
 .followus,
 .result-item h3 {
   font-size: 23px;
@@ -248,18 +255,18 @@ margin-left: 10px;
 h3.feauteres-head {
   font-size: 21px;
   line-height: 21px;
-  padding-top: 48px;
+  padding-top: 47px;
   padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-  width: 157px;
+  width: 151px;
 }
 
 h4.advanced-head {
   font-size: 21px;
   line-height: 21px;
   padding-top: 22px;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
   width: 157px;
@@ -283,7 +290,7 @@ p.advanced-decription,
 
 .feauteres-decription {
 
-  width: 280px;
+  width: 306px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -327,6 +334,8 @@ p.advanced-decription,
 
 .result-list {
   outline: 1px dotted yellow;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   flex-direction: column;
 }
@@ -343,6 +352,8 @@ p.advanced-decription,
 
 .filters {
   outline: 1px dotted green;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   margin-top: -54px;
   flex-direction: column;
@@ -380,9 +391,12 @@ p.advanced-decription,
 
 .content-main {
   outline: 1px solid aqua;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 51px;
 }
 
 .main-feauteres {
@@ -415,12 +429,11 @@ p.advanced-decription,
 
 
 .main-pictures-first {
-  vertical-align: middle;
-  margin: 0px;
+
   width: 800px;
   min-height: 256px;
-  background-image: url("../img/feautere-first.jpg");
-  background-position: 50% 53%;
+  background-image: url("../img/feautere-first-sm.jpg");
+
 }
 
 .main-pictures-last {
@@ -428,7 +441,7 @@ p.advanced-decription,
   margin: 0px;
   width: 800px;
   height: 256px;
-  background-image: url("../img/feautere-second.jpg");
+  background-image: url("../img/feautere-second-sm.jpg");
   background-position: 50% 50%;
 }
 
@@ -498,6 +511,8 @@ a.youtube::after {
 
 .search {
   outline: 1px solid orange;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   min-height: 290px;
   width: auto;
@@ -509,6 +524,8 @@ a.youtube::after {
 
 .map {
   outline: 1px solid green;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   position: relative;
   height: 473px;
@@ -552,6 +569,8 @@ a.youtube::after {
 
 .sort-result {
   outline: 1px solid green;
+  background-color: rgba(225,225,255,0.4);
+  
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
@@ -604,6 +623,8 @@ a.logo-academy:active {
 .modal-seek {
   display: flex;
   flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 
 .search-dates input,
@@ -614,6 +635,7 @@ a.logo-academy:active {
   height: 38px;
   margin: 0px;
   outline: none;
+  width: 350px;
 }
 
 .quick-search {
