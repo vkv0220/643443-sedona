@@ -516,8 +516,9 @@ a.youtube::after {
 .modal-form {
   position: absolute;
   background-color: white;
-  left: 348px;
-  padding: 55px;
+  margin-left: 600px;
+  transform: translateX(-50%);
+  padding: 0px;
   box-sizing: border-box;
   width: 568px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
