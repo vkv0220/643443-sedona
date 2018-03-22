@@ -669,10 +669,24 @@ margin-bottom: 30px;
   margin: 0px;
   outline: none;
   width: 330px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
+  
 }
+
+.search-dates-calendar {
+
+position:absolute;
+  left: 483px;
+  top: 63px;
+}
+
+.checkout-calendar {
+
+  position:absolute;
+  left: 483px;
+  top: 129px;
+
+}
+
 
 .peoples-count input {
 
@@ -890,5 +904,7 @@ font-weight: normal;
   width: 49%;
 
 }
+
+
 
 
