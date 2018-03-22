@@ -33,12 +33,12 @@
         <div class="filter-infrastructure">
           <fieldset>
             <legend class="infractructure">Инфраструктура:</legend>
-            <ul>
-              <li><input type="checkbox" name="pool" id="filter-pool" checked>
+            <ul class="checkbox-filter">
+              <li><input type="checkbox" class="visually-hidden" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label></li>
-              <li><input type="checkbox" name="park" id="filter-park">
+              <li><input type="checkbox" class="visually-hidden" name="park" id="filter-park">
                 <label for="filter-park">Парковка</label></li>
-              <li><input type="checkbox" name="wlan" id="filter-wlan">
+              <li><input type="checkbox" class="visually-hidden" name="wlan" id="filter-wlan">
                 <label for="filter-wlan">Wi-Fi</label></li>
             </ul>
           </fieldset>
@@ -46,19 +46,58 @@
         <div class="filter-hotel-type">
           <fieldset>
             <legend class="infractructure">Тип жилья</legend>
-            <ul>
-              <li><input type="checkbox" name="hotel" id="filter-holtel" checked>
+            <ul class="checkbox-filter">
+              <li><input type="checkbox" class="visually-hidden" name="hotel" id="filter-holtel" checked>
                 <label for="filter-holtel">Гостиница</label></li>
-              <li><input type="checkbox" name="motel" id="filter-motel" checked>
+              <li><input type="checkbox" class="visually-hidden" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label></li>
-              <li><input type="checkbox" name="appartments" id="filter-appartments" checked>
+              <li><input type="checkbox" class="visually-hidden" name="appartments" id="filter-appartments" checked>
                 <label for="filter-appartments">Аппартаменты</label></li>
             </ul>
           </fieldset>
         </div>
-        <div class="filter-price">
+
+
+
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+
+
+
+        <!--
+            
+            <div class="filter-price">
           <fieldset>
+            
+            
+            
             <legend class="pricing">Стоимость в сутки (р):</legend>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="filter-range">
+      
+            </div>
+            
+            
             <ul>
               <li class="pricing-filteres">
                 <label for="price-from"></label>
@@ -67,11 +106,15 @@
                 <input type="text" name="price-to" id="price-to" placeholder="ДО 3000"></li>
               <li><input type="range" id="price-round-up" min="0">
                 <input type="range" id="price-round-to" min="0"></li>
-            </ul>
-
-          </fieldset>
+            </ul> 
+            
+             </fieldset>
           <input type="submit" class="button filters-submit" value="Показать">
-        </div>
+           </div>
+            -->
+
+
+
 
       </form>
     </section>
@@ -117,12 +160,12 @@
             </div>
             <ul class="result-rate">
               <li class="raiting-stars">
-              <ul>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-              <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-              </ul>
+                <ul>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                </ul>
               </li>
               <li class="raiting-hotel">рейтинг: 8,5</li>
             </ul>
@@ -135,8 +178,8 @@
             </div>
             <div class="hotel-description">
               <h3>Desert quail inn</h3>
-              
-              
+
+
               <div class="hotel-type">
                 <p>мотель</p>
                 <a class="button" href="#">Подробнее</a>
@@ -149,11 +192,11 @@
             </div>
             <ul class="result-rate">
               <li class="raiting-stars">
-              <ul>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-              </ul>
+                <ul>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                </ul>
               </li>
               <li class="raiting-hotel">рейтинг: 8,9</li>
             </ul>
@@ -168,7 +211,7 @@
             <div class="hotel-description">
               <h3>Villas at poco diablo</h3>
 
-             <div class="hotel-type">
+              <div class="hotel-type">
                 <p>апартаменты</p>
                 <a class="button" href="#">Подробнее</a>
               </div>
@@ -179,10 +222,12 @@
               </div>
             </div>
             <ul class="result-rate">
-              <li class="raiting-stars"><ul>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
-                              </ul></li>
+              <li class="raiting-stars">
+                <ul>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="star"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                </ul>
+              </li>
               <li class="raiting-hotel">рейтинг: 9,2</li>
             </ul>
 

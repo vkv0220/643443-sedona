@@ -323,6 +323,7 @@ p.advanced-decription,
   line-height: 24px;
   text-align: center;
   margin-top: 56px;
+  width:300px;
 }
 
 .search-description {
@@ -382,24 +383,7 @@ p.advanced-decription,
 }
 
 
-.filters-submit {
-  display: block;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #ffffff;
-  border-radius: 3px;
-  width: 133px;
-  min-height: 32px;
-  align-self: center;
-  
 
-}
-
-.filters-submit:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
 
 .sort-name {
   font-size: 12px;
@@ -657,6 +641,7 @@ a.logo-academy:active {
 .search-dates {
 
 margin-bottom: 30px;
+
   
 }
 .search-dates input {
@@ -870,11 +855,203 @@ font-weight: normal;
   margin-left: 100px;
 }
 
+
+input[type="checkbox"] {
+    /*display: none;*/
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:focus + label::before {
+    border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input[type="checkbox"]:checked + label::before {
+    display: block;
+  width: 27px;
+  height: 23px;
+  background-position: 50% 50%;
+ background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    opacity: 0.8;
+  
+   
+}
+
+input[type="checkbox"] + label::before {
+   
+  display: block;
+  width: 27px;
+  height: 23px;
+  background-position: 48% 50%;
+ background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.checkbox-filter li {
+ margin-top: 19px; 
+}
+
+
+/*filter-price from demo*/
+
+.filter-range {
+  width: 330px;
+margin-top: 27px;
+  margin-left: 315px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* filterprice 
+
 .filter-price {
   display: flex;
   width: 300px;
   margin-top: 27px;
-  margin-left: 340px;
+  margin-left: 315px;
   flex-direction: column;
 }
 
@@ -903,8 +1080,22 @@ font-weight: normal;
   margin: 0px;
   width: 49%;
 
+}.filters-submit {
+  display: block;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  width: 133px;
+  min-height: 32px;
+  align-self: center;
+  
+
 }
 
-
-
-
+.filters-submit:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+*/
