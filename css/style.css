@@ -22,11 +22,16 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
 }
 
-
 a {
   text-decoration: none;
 }
 
+/*Правило, защищающее от выпадания картинок.*/
+
+img {
+  max-width: 100;
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -39,7 +44,6 @@ a {
   overflow: hidden;
 }
 
-
 .site-navigation {
   display: flex;
   list-style: none;
@@ -49,7 +53,6 @@ a {
 
 .main-navigation {
   padding-top: 14px;
-
 }
 
 .main-navigation-logo {
@@ -61,17 +64,11 @@ a {
   position: relative;
   top: -40px;
   justify-content: center;
-  
-
-
 }
 
-
 .site-navigation li {
-
   width: 20%;
   vertical-align: middle;
-
 }
 
 .nav-left {
@@ -81,12 +78,11 @@ a {
 .nav-right {
   text-align: right;
   margin-left: auto;
-
 }
+
 .site-navigation li:first-child {
   margin-left: 72px;
 }
-
 
 .site-navigation li:last-child {
   margin-right: 72px;
@@ -95,8 +91,6 @@ a {
 .site-navigation li:nth-child(3) {
   padding-left: 84px;
 }
-
-
 
 .main-navigation a {
   color: #000000;
@@ -111,10 +105,7 @@ a {
   color: #cacaca;
 }
 
-
 .intro {
-
-  
   display: flex;
   position: relative;
   flex-direction: column-reverse;
@@ -139,11 +130,7 @@ a {
   background-repeat: no-repeat;
 }
 
-
 .content-description {
-  outline: 1px solid green;
-  background-color: rgba(225,225,255,0.4);
-  
   display: flex;
   font-size: 21px;
   width: 500px;
@@ -154,7 +141,6 @@ a {
   text-align: center;
 
 }
-
 
 .button,
 .quick-search {
@@ -172,13 +158,12 @@ a {
   background-color: #669ec0;
 }
 
-
 .quick-search,
 .summ-result {
   font-size: 21px;
 }
 
-.summ-result { 
+.summ-result {
   margin-left: 70px;
 }
 
@@ -225,10 +210,9 @@ a.sort:active {
 }
 
 a.actived {
- color:  #81b3d2;
+  color: #81b3d2;
   border: none;
 }
-
 
 a.book,
 a.book:visited {
@@ -254,12 +238,10 @@ a.book:active {
   padding-top: 27px;
 }
 
-
-
 .followus {
   font-size: 21px;
   width: 33%;
-margin-left: 132px;
+  margin-left: 132px;
 }
 
 h3.feauteres-head {
@@ -282,7 +264,6 @@ h4.advanced-head {
   width: 157px;
 }
 
-
 .feauteres-number,
 .feauteres-decription,
 p.advanced-decription,
@@ -301,18 +282,16 @@ p.advanced-decription,
 }
 
 .feauteres-decription-bottom {
-   font-size: 14px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   margin-top: 20px;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .advanced-decription {
-
   width: 290px;
   margin-left: auto;
   margin-right: auto;
@@ -323,7 +302,7 @@ p.advanced-decription,
   line-height: 24px;
   text-align: center;
   margin-top: 56px;
-  width:300px;
+  width: 300px;
 }
 
 .search-description {
@@ -333,7 +312,6 @@ p.advanced-decription,
   width: 450px;
   margin-bottom: 20px;
 }
-
 
 .infractructure,
 .pricing {
@@ -351,7 +329,6 @@ p.advanced-decription,
 }
 
 .result-list {
-
   display: flex;
   flex-direction: column;
 }
@@ -360,14 +337,12 @@ p.advanced-decription,
   display: flex;
 }
 
-
 .filters label {
   font-size: 14px;
   line-height: 21px;
 }
 
 .filters {
-
   display: flex;
   margin-top: -54px;
   flex-direction: column;
@@ -382,9 +357,6 @@ p.advanced-decription,
   border: none;
 }
 
-
-
-
 .sort-name {
   font-size: 12px;
   line-height: 18px;
@@ -394,9 +366,6 @@ p.advanced-decription,
 }
 
 .content-main {
-  outline: 1px solid aqua;
-  background-color: rgba(225,225,255,0.4);
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -404,7 +373,6 @@ p.advanced-decription,
 }
 
 .main-feauteres {
-
   text-align: center;
   vertical-align: middle;
   width: 400px;
@@ -431,13 +399,10 @@ p.advanced-decription,
   background-color: #eeeeee;
 }
 
-
 .main-pictures-first {
-
   width: 800px;
   min-height: 256px;
   background-image: url("../img/feautere-first-sm.jpg");
-
 }
 
 .main-pictures-last {
@@ -448,7 +413,6 @@ p.advanced-decription,
   background-image: url("../img/feautere-second-sm.jpg");
   background-position: 50% 50%;
 }
-
 
 .social li {
   list-style: none;
@@ -511,12 +475,9 @@ a.youtube::after {
   opacity: .3;
 }
 
-
-
 .search {
   outline: 1px solid orange;
-  background-color: rgba(225,225,255,0.4);
-  
+  background-color: rgba(225, 225, 255, 0.4);
   display: flex;
   min-height: 290px;
   width: auto;
@@ -527,16 +488,11 @@ a.youtube::after {
 }
 
 .map {
-  outline: 1px solid green;
-  background-color: rgba(225,225,255,0.4);
-  
   display: flex;
   position: relative;
   height: 473px;
   z-index: 2;
-
 }
-
 
 .modal-form {
   position: absolute;
@@ -550,9 +506,7 @@ a.youtube::after {
   z-index: 3;
 }
 
-
 .main-footer {
-
   display: flex;
   position: relative;
   min-height: 120px;
@@ -560,7 +514,6 @@ a.youtube::after {
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 3;
   margin-left: auto;
-
 }
 
 .detail-seek {
@@ -569,9 +522,6 @@ a.youtube::after {
 }
 
 .sort-result {
-  outline: 1px solid green;
-  background-color: rgba(225,225,255,0.4);
-  
   display: flex;
   vertical-align: middle;
   padding-top: 30px;
@@ -579,10 +529,7 @@ a.youtube::after {
   border-bottom: 1px solid #f2f2f2;
 }
 
-
-
 .result-item {
-
   display: flex;
   min-height: 149px;
   border-bottom: 1px solid #f2f2f2;
@@ -592,7 +539,7 @@ a.youtube::after {
   display: flex;
   flex-direction: column;
   font-weight: normal;
-  width:33%;
+  width: 33%;
   margin-right: 100px;
 }
 
@@ -615,16 +562,17 @@ a.youtube::after {
 }
 
 a.logo-academy:hover {
-  background-image:  url("../img/logo-htmlacademy-hover.svg");
+  background-image: url("../img/logo-htmlacademy-hover.svg");
 }
+
 a.logo-academy:active {
-  background-image:  url("../img/logo-htmlacademy-active.svg");
+  background-image: url("../img/logo-htmlacademy-active.svg");
 }
 
 .social {
   margin-left: 100px;
   margin-right: 1px;
-  width:33%;
+  width: 33%;
 }
 
 .modal-seek {
@@ -634,16 +582,12 @@ a.logo-academy:active {
   padding-bottom: 50px;
   margin-left: 12px;
   margin-right: 10px;
-  
-
 }
 
 .search-dates {
-
-margin-bottom: 30px;
-
-  
+  margin-bottom: 30px;
 }
+
 .search-dates input {
   border: none;
   background-color: #f2f2f2;
@@ -654,27 +598,22 @@ margin-bottom: 30px;
   margin: 0px;
   outline: none;
   width: 330px;
-  
 }
 
 .search-dates-calendar {
-
-position:absolute;
+  position: absolute;
   left: 483px;
   top: 63px;
 }
 
 .checkout-calendar {
-
-  position:absolute;
+  position: absolute;
   left: 483px;
   top: 129px;
-
 }
 
 
 .peoples-count input {
-
   border: none;
   background-color: #f2f2f2;
   height: 38px;
@@ -687,16 +626,13 @@ position:absolute;
   background-position: 15% 50%, 85% 50%;
 }
 
-
 .quick-search {
   margin-top: 53px;
-width: 458px;
+  width: 458px;
   min-height: 58px;
   margin-bottom: 5px;
   align-self: center;
-  
 }
-
 
 .search-label {
   margin-right: 20px;
@@ -710,18 +646,14 @@ width: 458px;
   margin-right: 37px;
 }
 
-
 .search-people-child {
   margin-left: 48px;
   margin-right: 24px;
 }
 
-
 .sort-up-down {
   display: flex;
 }
-
-
 
 .sort-up {
   margin-top: 2px;
@@ -729,15 +661,14 @@ width: 458px;
   display: inline-block;
   width: 11px;
   height: 10px;
-
 }
+
 .sort-down {
   margin-top: 2px;
   margin-left: 12px;
   display: inline-block;
   width: 11px;
   height: 10px;
-
 }
 
 a .sort-arrow {
@@ -745,13 +676,12 @@ a .sort-arrow {
 }
 
 a .sort-active.sort-arrow {
-fill: #81b3d2 ;
+  fill: #81b3d2;
 }
 
 a .sort-arrow:hover {
   fill: #000000;
 }
-
 
 .sort-by {
   padding-top: 6px;
@@ -769,15 +699,13 @@ a .sort-arrow:hover {
 .result-item h3 {
   display: block;
   font-size: 21px;
-    padding-left: 30px;
+  padding-left: 30px;
   padding-top: 25px;
 }
 
 .hotel-description {
   width: 300px;
 }
-
-
 
 .hotel-type {
   display: inline-block;
@@ -786,14 +714,14 @@ a .sort-arrow:hover {
   width: 110px;
   margin-left: 30px;
 }
+
 .hotel-type p {
-  
-font-weight: normal;
-    
+  font-weight: normal;
 }
+
 .hotel-type a {
   display: inline-block;
- width: 110px;
+  width: 110px;
   min-height: 27px;
   margin-top: 12px;
 }
@@ -804,17 +732,17 @@ font-weight: normal;
   margin-top: 3px;
   width: 142px;
   margin-left: 3px;
-  
 }
+
 .hotel-price p {
-  
-font-weight: normal;
-  
+  font-weight: normal;
+
 }
+
 .hotel-price a {
   display: inline-block;
   text-align: center;
- width: 142px;
+  width: 142px;
   min-height: 27px;
   margin-top: 12px;
 }
@@ -827,20 +755,20 @@ font-weight: normal;
 
 .raiting-hotel {
   display: inline-block;
-  background-color: #f2f2f2;  
+  background-color: #f2f2f2;
   width: 110px;
   text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
-  margin-top:40px;
-
+  margin-top: 40px;
 }
 
 .raiting-stars ul {
- list-style: none;
+  list-style: none;
   display: flex;
   justify-content: flex-end;
 }
+
 .star {
   margin-left: 5px;
 }
@@ -851,76 +779,72 @@ font-weight: normal;
 }
 
 .filter-hotel-type {
-    margin-top: 27px;
+  margin-top: 27px;
   margin-left: 100px;
 }
 
-
+/*
 input[type="checkbox"] {
-    /*display: none;*/
+  display: none;
 }
+*/
 
 input[type="checkbox"] + label {
-    position: relative;
-    padding-left: 40px;
-    cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
 }
 
 input[type="checkbox"]:focus + label::before {
-    border-color: #663d15;
+  border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
 input[type="checkbox"]:checked + label::before {
-    display: block;
+  display: block;
   width: 27px;
   height: 23px;
   background-position: 50% 50%;
- background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   content: "";
-    position: absolute;
-    top: 0;
-    left: 2px;
-    opacity: 0.8;
-  
-   
+  position: absolute;
+  top: 0;
+  left: 2px;
+  opacity: 0.8;
 }
 
 input[type="checkbox"] + label::before {
-   
   display: block;
   width: 27px;
   height: 23px;
   background-position: 48% 50%;
- background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   content: "";
   position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
 }
 
 .checkbox-filter li {
- margin-top: 19px; 
+  margin-top: 19px;
 }
 
-
-/*filter-price from demo*/
+/*filter-price*/
 
 .filter-range {
-  width: 330px;
-margin-top: 27px;
-  margin-left: 315px;
+  width: 315px;
+  margin-top: 27px;
+  margin-left: 329px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-
+  margin-bottom: 7px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -928,12 +852,9 @@ margin-top: 27px;
 
 .price-controls {
   position: relative;
-  
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -943,21 +864,17 @@ margin-top: 27px;
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -970,40 +887,33 @@ margin-top: 27px;
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1025,14 +935,12 @@ margin-top: 27px;
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
+  margin-left: 83px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1041,7 +949,6 @@ margin-top: 27px;
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -1055,9 +962,7 @@ margin-top: 27px;
   flex-direction: column;
 }
 
-
 .pricing-filteres {
-  
   display: inline-block;
   margin-top: 2px;
   color: #ffffff;
@@ -1066,7 +971,6 @@ margin-top: 27px;
   width: 315px;
   min-height: 32px;
   margin-top: 5px;
-
 }
 
 .pricing-filteres input {
@@ -1089,8 +993,6 @@ margin-top: 27px;
   width: 133px;
   min-height: 32px;
   align-self: center;
-  
-
 }
 
 .filters-submit:hover {
