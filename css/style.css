@@ -97,15 +97,18 @@ img {
   padding-left: 84px;
 }
 
-.main-navigation a {
+.main-navigation a,
+a.hotel-link {
   color: #000000;
 }
 
+a.hotel-link:hover,
 .main-navigation a:hover,
 .main-navigation a:hover {
   color: #81b3d2;
 }
 
+a.hotel-link:active,
 .main-navigation a:active {
   color: #cacaca;
 }
