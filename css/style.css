@@ -683,23 +683,65 @@ a.logo-academy:active {
   top: 6px;
 }
 
-.checkout-calendar {
+a.checkout-calendar,
+a.search-dates-calendar{
   position: absolute;
   left: 430px;
   top: 6px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/calendar.svg");
+}
+
+a.checkout-calendar:hover,
+a.search-dates-calendar:hover {
+  background-image: url("../img/calendar-hover.svg");
+}
+
+a.checkout-calendar:active,
+a.search-dates-calendar:active{
+  background-image: url("../img/calendar-active.svg");
 }
 
 .peoples-count input {
   border: none;
   background-color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
   height: 38px;
   margin: 0px;
   outline: none;
   text-align: center;
-  width: 115px;
-  background-image: url("../img/minus.png"), url("../img/plus.png");
-  background-repeat: no-repeat;
-  background-position: 15% 50%, 85% 50%;
+  width: 40px;
+
+}
+
+.peoples-count button {
+  outline: none;
+  display: inline-block;
+  color: #cacaca;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  background-color: #f2f2f2;
+  margin-left: -4px;
+  margin-right: -4px;
+  height: 38px;
+  width:38px;
+  vertical-align: top;
+}
+
+.peoples-count button:hover {
+ color:  #000000;
+
+}
+
+
+.peoples-count button:active {
+ color:  #81b3d2;
+
 }
 
 .quick-search {
@@ -720,11 +762,11 @@ a.logo-academy:active {
 }
 
 .search-people {
-  margin-right: 37px;
+  margin-right: 40px;
 }
 
 .search-people-child {
-  margin-left: 48px;
+  margin-left: 54px;
   margin-right: 24px;
 }
 
