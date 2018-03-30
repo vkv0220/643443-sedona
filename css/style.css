@@ -259,8 +259,8 @@ a.book:active {
 
 .followus {
   font-size: 21px;
-  width: 33%;
-  margin-left: 132px;
+  width: 34%;
+  text-align: center;
 }
 
 h3.feauteres-head {
@@ -454,7 +454,7 @@ p.advanced-decription,
 .social li {
   list-style: none;
   display: inline;
-  margin-left: 3px;
+  text-align: center;
 }
 
 .social a {
@@ -604,8 +604,7 @@ a.youtube::after {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: normal;
-  width: 33%;
-  margin-right: 100px;
+  width: 34%;
 }
 
 .copyright-list {
@@ -618,7 +617,7 @@ a.youtube::after {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: center;
 }
 
 .logo-academy {
@@ -641,9 +640,8 @@ a.logo-academy:active {
 }
 
 .social {
-  margin-left: 100px;
-  margin-right: 1px;
-  width: 33%;
+  width: 34%;
+  text-align: center;
 }
 
 .modal-seek {
@@ -713,7 +711,6 @@ a.search-dates-calendar:active{
   outline: none;
   text-align: center;
   width: 40px;
-
 }
 
 .peoples-count button {
@@ -735,9 +732,7 @@ a.search-dates-calendar:active{
 
 .peoples-count button:hover {
  color:  #000000;
-
 }
-
 
 .peoples-count button:active {
  color:  #81b3d2;
@@ -857,7 +852,6 @@ a .sort-arrow:hover {
 
 .hotel-price p {
   font-weight: normal;
-
 }
 
 .hotel-price a {
